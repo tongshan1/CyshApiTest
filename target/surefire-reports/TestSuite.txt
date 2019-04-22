@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 1, Errors: 0, Skipped: 2, Time elapsed: 2.004 sec <<< FAILURE! - in TestSuite
+testRequest(framework.runner.TestNG)  Time elapsed: 0.043 sec  <<< FAILURE!
+java.lang.AssertionError:  expected [success] but found [error]
+	at framework.runner.TestNG.checkResponse(TestNG.java:82)
+	at framework.runner.TestNG.testRequest(TestNG.java:124)
+

@@ -1,0 +1,13 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="First suite" verbose="1" >
+    <listeners>
+        <listener class-name="framework.listener.RetryListener" />
+        <listener class-name="framework.listener.TestngListener" />
+        <listener class-name="framework.listener.ReportListener" />
+    </listeners>
+    <test name = "allTestsInAPackage">
+        <classes>
+            <class name = "framework.runner.TestFactory" />
+        </classes>
+    </test>
+</suite>

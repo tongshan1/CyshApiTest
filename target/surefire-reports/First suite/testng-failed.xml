@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [First suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="framework.listener.RetryListener"/>
+    <listener class-name="framework.listener.TestngListener"/>
+    <listener class-name="framework.listener.ReportListener"/>
+  </listeners>
+  <test thread-count="5" name="allTestsInAPackage(failed)" verbose="0">
+    <classes>
+      <class name="framework.runner.TestNG">
+        <methods>
+          <include name="beforeClass"/>
+          <include name="testRequest" invocation-numbers="1 1 1"/>
+          <include name="beforeMethod"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- framework.runner.TestNG -->
+    </classes>
+  </test> <!-- allTestsInAPackage(failed) -->
+</suite> <!-- Failed suite [First suite] -->

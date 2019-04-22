@@ -1,0 +1,34 @@
+# demo.yaml
+---
+name: login and get accessToken
+config:
+  webRoot: http://115.159.29.231:5555
+  variables:
+    accessToken: eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg
+requests:
+  - url: http://115.159.29.231:5555/web/sellerServer/goods
+    method: GET
+    headers:
+      Content-Type: application/json
+      accessToken: $(accessToken)
+    query:
+      status: 1
+      type: 1
+      page: 1
+      rows: 20
+    validators:
+      - {"check": "code", "comparator": "EQUAL", "expected": "error", "message": ""}
+    outs:
+      - code
+  - url: http://115.159.29.231:5555/web/sellerServer/shops/login0000
+    method: GET
+    headers:
+      Content-Type: application/json
+      accessToken: $(accessToken)
+    query:
+      code: $(code)
+      pwd: 12345678
+    validators:
+      - {"check": "code", "comparator": "NOT_EQU", "expected": "success", "message": ""}
+    outs:
+      - content

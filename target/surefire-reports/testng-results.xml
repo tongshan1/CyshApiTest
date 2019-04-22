@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="3" failed="1" skipped="2">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-03-27T06:50:52Z" name="First suite" finished-at="2019-03-27T06:50:53Z" duration-ms="1166">
+    <groups>
+    </groups>
+    <test started-at="2019-03-27T06:50:52Z" name="allTestsInAPackage" finished-at="2019-03-27T06:50:53Z" duration-ms="1166">
+      <class name="framework.runner.TestNG">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:52Z" name="beforeClass" finished-at="2019-03-27T06:50:52Z" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:52Z" name="beforeMethod" finished-at="2019-03-27T06:50:52Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1fdca564]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:52Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="938" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/goods, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={status=1, type=1, page=1, rows=20}, body=null, validators=[Validator(check=code, comparator=EQUAL, expected=error, message=)], outs=[code], response=io.restassured.internal.RestAssuredResponseImpl@4bc33720)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@43f9dd56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=SUCCESS method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@3a7442c7] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1fdca564]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="49" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/shops/login0000, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={code=error, pwd=12345678}, body=null, validators=[Validator(check=code, comparator=NOT_EQU, expected=success, message=)], outs=[content], response=io.restassured.internal.RestAssuredResponseImpl@2dd0f797)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=SUCCESS method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@3a7442c7] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@43f9dd56]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d12e953]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeClass" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterClass" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8]" started-at="2019-03-27T06:50:53Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="43" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/goods, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={status=1, type=1, page=1, rows=20}, body=null, validators=[Validator(check=code, comparator=EQUAL, expected=error, message=)], outs=[code], response=io.restassured.internal.RestAssuredResponseImpl@67064bdc)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=SUCCESS method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@1d12e953]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@57cb70be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8]" started-at="2019-03-27T06:50:53Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="40" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/shops/login0000, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={code=error, pwd=12345678}, body=null, validators=[Validator(check=code, comparator=EQUAL, expected=success, message=)], outs=[content], response=io.restassured.internal.RestAssuredResponseImpl@3722c145)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ expected [success] but found [error]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  expected [success] but found [error]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at yamlModel.Comparator$1.comparator(Comparator.java:14)
+at framework.runner.TestNG.checkResponse(TestNG.java:82)
+at framework.runner.TestNG.testRequest(TestNG.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@26c89563]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8]" started-at="2019-03-27T06:50:53Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="36" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/shops/login0000, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={code=error, pwd=12345678}, body=null, validators=[Validator(check=code, comparator=EQUAL, expected=success, message=)], outs=[content], response=io.restassured.internal.RestAssuredResponseImpl@3722c145)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ expected [success] but found [error]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  expected [success] but found [error]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at yamlModel.Comparator$1.comparator(Comparator.java:14)
+at framework.runner.TestNG.checkResponse(TestNG.java:82)
+at framework.runner.TestNG.testRequest(TestNG.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=SKIP method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@57cb70be]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod([Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="beforeMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3bd6ba24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=SKIP method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@26c89563]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method signature="testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8]" started-at="2019-03-27T06:50:53Z" name="testRequest" data-provider="requests" finished-at="2019-03-27T06:50:53Z" duration-ms="39" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Request(url=http://115.159.29.231:5555/web/sellerServer/shops/login0000, method=GET, path=null, headers={Content-Type=application/json, accessToken=eyJhbGciOiJIUzUxMiJ9.eyJjeXNoUmFuZG9tS2V5VGVzdCI6ImJ6NXp3bCIsInN1YiI6IjI2IiwicHJlZml4Ijoid2ViIiwibWFsbElkIjowLCJzaG9wSWQiOjU3LCJleHAiOjE1NTI0NjEwODgsImlhdCI6MTU1MjM3NDY4OH0.krFPmHInohHHey01Qi-ymHGgIUElJIvqqBYMWZFqSFJ_yMb6wtNVBjUBhxj2zmW0gHmpzAqUA_zsZgpFoWbXRg}, query={code=error, pwd=12345678}, body=null, validators=[Validator(check=code, comparator=EQUAL, expected=success, message=)], outs=[content], response=io.restassured.internal.RestAssuredResponseImpl@3722c145)]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[ expected [success] but found [error]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError:  expected [success] but found [error]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at yamlModel.Comparator$1.comparator(Comparator.java:14)
+at framework.runner.TestNG.checkResponse(TestNG.java:82)
+at framework.runner.TestNG.testRequest(TestNG.java:124)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.retryFailed(Invoker.java:839)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1010)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testRequest -->
+        <test-method is-config="true" signature="afterMethod(org.testng.ITestResult, [Ljava.lang.Object;)[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterMethod" finished-at="2019-03-27T06:50:53Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testRequest status=FAILURE method=TestNG.testRequest(yamlModel.Request)[pri:0, instance:framework.runner.TestNG@6bbe85a8] output={null}]]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.Object;@3bd6ba24]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:framework.runner.TestNG@3a7442c7]" started-at="2019-03-27T06:50:53Z" name="afterClass" finished-at="2019-03-27T06:50:53Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- framework.runner.TestNG -->
+    </test> <!-- allTestsInAPackage -->
+  </suite> <!-- First suite -->
+</testng-results>
